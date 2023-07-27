@@ -1,4 +1,5 @@
-import logo from "./logo.svg";
+
+import image from "./lone.jpg"
 import "./App.css";
 import { useState } from "react";
 
@@ -14,6 +15,7 @@ function App() {
   }
   return (
     <div className="App">
+      <img src={image} className="App-logo" alt="logo" />
       <h2 className="Header">
         {!advice ? "Please Click the button to get todays Motivational Qoutes" : advice}
       </h2>
